@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <title>Novo Evento</title>
+</head>
+
+<body>
+
+    <!-- menu -->
+    <div class="navbar navbar-light">
+        <a href="" class="navbar-brand">
+            <img src="img/logo.png" alt="" width="30px" height="30px">
+            Agendamento de Salas
+        </a>
+    </div>
+    <!-- menu-lateral -->
+    <div class="row no-gutters">
+        <div class="col-md-2 menu-lateral">
+            <nav class="nav nav-pills nav-fill flex-column">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="sala.html" class="nav-item nav-link">Sala</a>
+                <a href="#" class="nav-item nav-link active">Evento</a>
+            </nav>
+        </div>
+        <!-- conteudo -->
+        <div class="col-md-10">
+            <div class="conteudo">
+                <h2>Novo Evento</h2></br>
+                <form action="">
+                    <div class="row">
+                        <div class="form-group col-md-2">
+                            <label for="salaId_to_eventos">SalaID</label>
+                            <select id="salaId_to_eventos" class="form-control">
+                                <option selected>Selecionar...</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="nome_eventos">Nome</label>
+                            <input type="text" class="form-control" id="nome_eventos" disabled>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-3">
+                            <label for="dataInicio_eventos">Data Início</label>
+                            <input type="text" class="form-control" id="dataInicio_eventos">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="dataFim_eventos">Data Fim</label>
+                            <input type="text" class="form-control" id="dataFim_eventos">
+                        </div>
+                    </div>
+                    <button class="btn btn-success">Cadastrar</button>
+                    <a href="evento.html" class="btn btn-secondary">Cancelar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
